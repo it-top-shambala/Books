@@ -54,12 +54,12 @@ classDiagram
 
     Book *-- Books
     class Books {
-        - vector<Book*> _books
+        - vector~Book*~ _books
         - ComparatorByTitle(Book* book1, Book* book2) bool
         + AddBook(Book* book) void
-        + GetAll() vector<Book*>
-        + GetBooksByAuthor(string name) vector<Book*>
-        + GetBooksByTitle(string title) vector<Book*>
+        + GetAll() vector~Book*~
+        + GetBooksByAuthor(string name) vector~Book*~
+        + GetBooksByTitle(string title) vector~Book*~
         + SortByTitle() void
     }
 ```
